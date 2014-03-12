@@ -2,7 +2,7 @@ var slackub = require('../lib/slackub')
   , config  = require('../lib/config');
 
 exports.index = function(req, res){
-  var context = slackub.init(config.url, config.token, req.query.channel, req);
+  var context = slackub.init(config.url, config.token, req);
   context.post(function (code) {
     res.send(code);
   }, function (code, err) {
