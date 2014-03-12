@@ -1,4 +1,4 @@
-[pull request review comment created]
+action: created
 repository: <{{ repository.html_url }}|{{ repository.name }}>
 path: {{ comment.path }}
 sender: {{ sender.login }}

@@ -1,4 +1,4 @@
-[push]
+action: push
 repository: <{{ repository.url }}|{{ repository.name }}>
 ref: {{ ref }} 
 pusher: {{ pusher.name }}

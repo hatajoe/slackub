@@ -1,3 +1,3 @@
-[ping]
-setup notification is true.
+action: ping
+notice: setup notification is true.
 

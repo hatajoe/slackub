@@ -1,4 +1,4 @@
-[pull request {{ action }}]
+action: {{ action }}
 repository: <{{ repository.html_url }}|{{ repository.name }}>
 ref: {{ base.ref }} < {{ head.ref }}
 sender: {{ sender.login }}
