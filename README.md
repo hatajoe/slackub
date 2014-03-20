@@ -1,4 +1,4 @@
 slackub
 ======
 
-slackub is slack
+slackub is slack and
