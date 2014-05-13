@@ -1,4 +1,5 @@
 var slackub = require('../lib/slackub')
+  , slackab = require('../lib/slackab')
   , slacktm = require('../lib/slacktm')
   , slackho = require('../lib/slackho')
   , config  = require('../lib/config');
@@ -25,6 +26,16 @@ exports.lgtm = function(req, res){
 
 exports.echo = function(req, res){
   var context = slackho.init(config.url, config.token, req);
+  context.post(function (code) {
+    res.send(code);
+  }, function (code, err) {
+    res.send(code);
+    console.log(err);
+  });
+};
+
+exports.gitlab = function(req, res){
+  var context = slackab.init(config.url, config.token, req);
   context.post(function (code) {
     res.send(code);
   }, function (code, err) {

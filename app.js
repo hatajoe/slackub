@@ -29,6 +29,7 @@ if ('development' == app.get('env')) {
 app.post('/', routes.index);
 app.post('/lgtm', routes.lgtm);
 app.post('/echo', routes.echo);
+app.post('/gitlab', routes.gitlab);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
