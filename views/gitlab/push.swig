@@ -1,4 +1,4 @@
 repository: {{ repository.name }}
-ref: {{ ref }} 
+ref: {{ ref }}
 pusher: {{ user_name }}
 
