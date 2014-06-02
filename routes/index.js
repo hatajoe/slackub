@@ -35,7 +35,7 @@ exports.echo = function(req, res){
 };
 
 exports.gitlab = function(req, res){
-  var context = slackab.init(config.url, config.token, req);
+  var context = slackab.init(config.url, config.token, req, config.gitlab_token);
   context.post(function (code) {
     res.send(code);
   }, function (code, err) {
