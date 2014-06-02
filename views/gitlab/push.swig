@@ -3,6 +3,7 @@ ref: {{ ref }}
 pusher: {{ user_name }}
 commits_count: {{ total_commits_count }}
 {% for commit in commits %}
-    author:{{ commit.name }}
-    message:<{{ commit.url }}|{{ commit.message }}>
+    head: <{{ commit.url }}|{{ commit.id }}>
+    author: {{ commit.author.name }}
+    message: {{ commit.message }}
 {% endfor %}
